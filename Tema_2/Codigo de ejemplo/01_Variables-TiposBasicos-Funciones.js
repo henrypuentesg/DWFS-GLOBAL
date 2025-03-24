@@ -138,6 +138,10 @@ let objRef = obj;
 obj.a = 4;
 console.log(objRef.a);
 
+let objDeepCopy = {...obj}; //Deep copy con spread operator
+obj.a = 5;
+console.log(objDeepCopy.a);
+
 let sx = "hola";
 let sy = sx;
 sx = "adios";
@@ -168,6 +172,7 @@ console.log(suma(1,2));
  * Si alguno no se incluye, su valor es 'undefined'
  */
 console.log(suma(2));
+console.log(suma(undefined,2));
 
 /** Esto es una funcion flecha
  *  Si ocupan una línea, no es necesario indicar el 'return' ni las llaves.
