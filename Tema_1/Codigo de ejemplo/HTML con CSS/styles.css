@@ -1,3 +1,10 @@
+
+#tipo {
+    color: blue; /* Color del texto */
+    font-size: 20px; /* Tamaño de la fuente */
+    font-weight: bold; /* Negrita */
+}
+
 .unir-text {
     font-family: monospace; /* Fuente. Mas Info https://developer.mozilla.org/en-US/docs/Web/CSS/font-family */
 }
@@ -7,7 +14,8 @@
 }
 
 table {
-    width: 100%;
+    width: 50%;
+    margin: auto; /* Centrar la tabla */
 }
 
 td[estilo="impresionista"]:hover { /* Seleccionamos los td que tengan el atributo estilo con valor impresionista, cuando el raton pase por encima */
@@ -42,4 +50,31 @@ td[estilo="cubista"] > img {
 
 td[estilo="abstracto"] > img {
     border: 5px solid darkorange;
+}
+
+h1 + p {
+    color: #bb1818; /* Color de fondo */
+}
+
+
+th:hover{
+    background-color: #d9534f; /* Color de fondo */
+    color: white; /* Color del texto */
+    font-size: 20px; /* Tamaño de la fuente */
+    font-weight: bold; /* Negrita */
+    font-style: italic; /* Cursiva */
+    text-decoration: underline; /* Subrayado */
+    text-decoration-color: #d9534f; /* Color del subrayado */
+    text-decoration-thickness: 2px; /* Grosor del subrayado */
+
+}
+
+p[textType="code"]{
+    color: #1874de; /* Color de fondo */
+    font-size: 20px; /* Tamaño de la fuente */
+    font-weight: bold; /* Negrita */
+    font-style: italic; /* Cursiva */
+    text-decoration: underline; /* Subrayado */
+    text-decoration-color: #d7e3df; /* Color del subrayado */
+    text-decoration-thickness: 2px; /* Grosor del subrayado */
 }
